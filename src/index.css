@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit',sans-serif;
+}
+html {
+  /* background-color: black; */
+
+}
+body {
+  /* background-color: #858080e8; */
+}
+.app {
+    margin: auto;
+    /* border: 1px solid red; */
+    width:75%;
+    height: 100vh;
+    overflow: hidden;
+    
+    /* background-color: rgb(194, 214, 218); */
+    /* box-shadow: 0 0 10px 2px rgb(213, 213, 213); */
+    /* border: 3px black solid; */
+    
+}
+.container {
+    /* border: 1px black solid; */
+    /* width: 95%; */
+    margin: 1rem auto;
+    height: 100%;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    /* opacity: 1; */
+    /* position: fixed; */
+    justify-content: space-around;
+    margin: 1rem;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.2);
+    padding: 1rem;
+    /* border: 1px black solid; */
+}
+.title {
+    text-align: center;
+}
+button {
+    background-color:tomato;
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    height: 45px;
+
+}
+.pokemon-container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    overflow: scroll;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    /* border: 1px solid black; */
+}
+.pokemon-container::-webkit-scrollbar{
+  display: none;
+}
+.card-container{
+      display: flex;
+    margin: 3rem 0.5rem ;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    box-shadow: #d0d0d0b3  0 10px 10px 2px;
+    /* height: 150px; */
+    align-items: center;
+    border: 1.5px solid white;
+    width: 30%;
+    padding:10px 0;
+    position: relative;
+  }
+  .poki-img {
+    object-fit: fill;
+    position: absolute;
+    top: -60px;
+    width: 95%;
+    height: 90px;
+  }
+  .card-container:hover {
+    border: 1.5px rgb(192, 192, 192) solid;
+  transition: 0.2s;
+  transform: scale(1.015);
+  }
+  .card-container:hover .poki-img{
+  transition: 0.2s;
+  transform: scale(1.3);
+}
+.poki-id {
+  font-weight: 700;
+  padding-top: 1.8rem;
+}
+.types-container {
+  margin: 5px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+}
+.icons {
+  background-color: rgba(255, 255, 255, 0.585);
+  border-radius: 30%;
+  font-size: 1.3rem;
+}
+.ground {
+    background-color: rgb(218, 209, 209);
+  }
+.ghost {
+    background-color: rgb(247, 247, 247);
+  }
+.electric {
+    background-color: rgb(250, 250, 220);
+  }
+.bug {
+    background-color: #ffeed5;
+  }
+.poison {
+    background-color: #f4e5fc;
+  }
+.normal {
+    background-color: #F4F4F4;
+  }
+.fairy {
+    background-color: rgb(254, 212, 244);
+  }
+.fire {
+    background-color: #FBE3DF;
+  }
+.grass {
+    background-color:#E2F9E1;
+  }
+.water {
+    background-color:#E0F1FD;
+  }
+.modal {
+  position: fixed;
+  height:100% ;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 500;
+  display: flex;
+  color: #eee;
+  justify-content: center;
+  align-items: center;
+}
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.modal-poki-evolution {
+  display: flex;
+}
